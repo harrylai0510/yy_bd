@@ -50,7 +50,17 @@
             max-width: 350px;
             display: inline-block;
             margin-top: 2rem;
-            /* filter: grayscale(100%); */
+            /* filter: sepia(50%); */
+        }
+
+        .item img {
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .item:hover img {
+            opacity: 1;
+            transition: opacity 0.3s;
         }
 
         .item .polaroid:before {
@@ -118,6 +128,7 @@
 
         .item:hover {
             filter: none;
+            /* filter: sepia(30%); */
             transform: scale(1, 1) rotate(0deg) !important;
             transition: all 0.35s;
         }
@@ -140,8 +151,8 @@
         }
 
         .polaroid>img {
-            width: 350px;
-            height: 350px;
+            /* width: 350px;
+            height: 350px; */
         }
     </style>
 </head>
@@ -159,6 +170,12 @@
                 <div class="polaroid">
                     <img src="images/YYcat.png">
                     <div class="caption">騎貓中的歪歪</div>
+                </div>
+            </div>            
+            <div class="item item-3 col-12">
+                <div class="polaroid">
+                    <img src="images/yydance_square.png">
+                    <div class="caption">跳舞中的歪歪</div>
                 </div>
             </div>
         </div>
